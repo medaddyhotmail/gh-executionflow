@@ -6,8 +6,8 @@ jobs:
     strategy:
       matrix:
       node-version: [12, 14, 16]
-      os: [ubuntu-lastest, windows-latest, macos-latest]
-  runs-on: ${{ matrix.os }}
+      operating-system: [ubuntu-lastest, windows-latest, macos-latest]
+  runs-on: ${{ matrix.operating-system }}
   
   steps:
     - name: Get Code
